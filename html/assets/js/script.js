@@ -8,13 +8,13 @@ $(window).on("load", function() {
       $(".responsive-mobile-menu").toggleClass("active");
     });
 
-    $(".responsive-mobile-menu ul ul").parent().addClass("menu-item-has-children");
-    $(".responsive-mobile-menu ul li.menu-item-has-children > a").on("click", function() {
-      $(this).parent().toggleClass("active").siblings().removeClass("active");
-      $(this).next("ul").slideToggle();
-      $(this).parent().siblings().find("ul").slideUp();
-      return false;
-    });
+    // $(".responsive-mobile-menu ul ul").parent().addClass("menu-item-has-children");
+    // $(".responsive-mobile-menu ul li.menu-item-has-children > a").on("click", function() {
+    //   $(this).parent().toggleClass("active").siblings().removeClass("active");
+    //   $(this).next("ul").slideToggle();
+    //   $(this).parent().siblings().find("ul").slideUp();
+    //   return false;
+    // });
 
     $("html, .menu-btn.active").on("click", function() {
       $(".responsive-mobile-menu").removeClass("active");

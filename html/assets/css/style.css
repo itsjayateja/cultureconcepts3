@@ -413,9 +413,7 @@ nav ul ul li a:hover {
 	-o-transform: translateY(-50%);
 	transform: translateY(-50%);
 }
-.responsive-mobile-menu ul li.menu-item-has-children > a:before {
-	opacity: 1;
-	visibility: visible;
+
 }
 .responsive-mobile-menu ul li.menu-item-has-children.active > a:before {
 	content: '\f068';
