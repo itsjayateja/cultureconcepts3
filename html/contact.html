@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<title>Culture Concepts</title>
@@ -17,6 +18,8 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/color.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+	<script src="https://smtpjs.com/v3/smtp.js"></script>
+	<!-- <script src="/cultureconcepts3/documentation/mail/sendmail.js"></script> -->
 </head>
 
 
@@ -33,7 +36,7 @@
 	</div><!--page-loading end-->
 
 	<div class="wrapper">
-			
+
 		<header>
 			<div class="container">
 				<div class="header-content">
@@ -48,7 +51,7 @@
 							<li><a href="about.html" title="">About Us</a></li>
 							<li><a href="services.html" title="">Services</a></li>
 							<li><a href="portfolio.html" title="">Portfolio</a>
-								
+
 							</li>
 							<li><a class="active" href="contact.html" title="">Contact</a></li>
 						</ul>
@@ -69,11 +72,11 @@
 		</header><!--header end-->
 
 		<div class="header-search d-flex flex-wrap justify-content-center align-items-center w-100">
-            <span class="search-close-btn"><i class="fas fa-times"></i></span>
-            <form>
-                <input type="text" placeholder="Search">
-            </form>
-        </div><!--header-search end-->
+			<span class="search-close-btn"><i class="fas fa-times"></i></span>
+			<form>
+				<input type="text" placeholder="Search">
+			</form>
+		</div><!--header-search end-->
 
 		<div class="responsive-mobile-menu">
 			<ul>
@@ -82,27 +85,27 @@
 				<li><a href="services.html" title="">Services</a></li>
 				<li><a href="portfolio.html" title="">Portfolio</a>
 				<li><a href="contact.html" title="">Contact</a></li>
-					<!-- <ul> -->
-						<!-- <li><a href="#" title="">Portfolio Details</a></li> -->
-					<!-- </ul> -->
+				<!-- <ul> -->
+				<!-- <li><a href="#" title="">Portfolio Details</a></li> -->
+				<!-- </ul> -->
 				</li>
 				<!-- <li><a href="catalog.html" title="">Shop</a> -->
-					<ul>
-						<!-- <li>
+				<ul>
+					<!-- <li>
 							<a href="catalog-product.html" title="">Shop Details</a>
 						</li> -->
-						<!-- <li>
+					<!-- <li>
 							<a href="shop.html" title="">Shop 2</a>
 						</li>
 					</ul>
 				</li> -->
-				<!-- <li><a href="blog.html" title="">Blog</a>
+					<!-- <li><a href="blog.html" title="">Blog</a>
 					<ul>
 						<li><a href="blog-single.html" title="">Blog Single</a></li>
 					</ul>
 				</li> -->
-				
-			</ul>
+
+				</ul>
 		</div><!--responsive-mobile-menu end-->
 
 		<section class="pager-section">
@@ -140,7 +143,9 @@
 											<span class="ci-icon">
 												<img src="assets/images/ci1.png" alt="">
 											</span>
-											<p>Culture Concepts, 3rd Floor, Plot no 194, Survey Of India Ayyappa Society, Survey of India Colony, Chanda Naik Nagar, Madhapur, Hyderabad, Telangana 500081</p>
+											<p>Culture Concepts, 3rd Floor, Plot no 194, Survey Of India Ayyappa
+												Society, Survey of India Colony, Chanda Naik Nagar, Madhapur, Hyderabad,
+												Telangana 500081</p>
 										</li>
 										<li>
 											<span class="ci-icon">
@@ -171,13 +176,14 @@
 											<div class="col-sm-6">
 												<div class="form-group">
 													<label>Name</label>
-													<input type="text" name="name" class="form-control name" placeholder="Jay">
+													<input type="text" name="name" id="name" class="form-control name"
+														placeholder="">
 												</div><!--form-group end-->
 											</div>
 											<div class="col-sm-6">
-												<div class="form-group">
+												<div class="form-group" >
 													<label>What city are you from?</label>
-													<select class="form-control">
+													<select class="form-control" id ="city">
 														<option>Telangana</option>
 														<option>Andhra Pradesh</option>
 														<option>Arunachal Pradesh</option>
@@ -212,24 +218,29 @@
 											<div class="col-sm-6">
 												<div class="form-group">
 													<label>E-mail</label>
-													<input type="email" name="email" class="form-control email" placeholder="Example@gmail.com">
+													<input type="email" name="email" id="email" class="form-control email"
+														placeholder="">
 												</div><!--form-group end-->
 											</div>
 											<div class="col-sm-6">
 												<div class="form-group">
 													<label>Phone Number</label>
-													<input type="text" name="name" class="form-control" placeholder="9640XXXXXX">
+													<input type="text" name="phone" id="phone" class="form-control"
+														placeholder="">
 												</div><!--form-group end-->
 											</div>
 											<div class="col-sm-10">
 												<div class="form-group">
 													<label>Message</label>
-													<textarea class="form-control" placeholder="Hello! I have this question..."></textarea>
+													<textarea class="form-control" name="message" id="message"
+														placeholder=""></textarea>
 												</div><!--form-group end-->
 											</div>
 											<div class="col-sm-2">
 												<div class="form-submit">
-													<button type="button" id="submit"><img src="assets/images/submit.png" alt=""></button>
+													<button type="submit" id="submit"><img
+															src="assets/images/submit.png" alt=""></button>
+													<script src="../documentation/mail/sendmail.js"></script>
 												</div><!--form-submit end-->
 											</div>
 										</div>
@@ -241,8 +252,10 @@
 					<div class="contact-social">
 						<span>Subscribe to our social networks :</span>
 						<ul class="social-links without-bg">
-							<li><a href="https://www.instagram.com/cultureconceptsindia/?__coig_restricted=1" title=""><i class="fab fa-instagram"></i></a></li>
-							<li><a href="https://www.facebook.com/cultureconceptinterio?mibextid=ZbWKwL" title=""><i class="fab fa-facebook-f"></i></a></li>
+							<li><a href="https://www.instagram.com/cultureconceptsindia/?__coig_restricted=1"
+									title=""><i class="fab fa-instagram"></i></a></li>
+							<li><a href="https://www.facebook.com/cultureconceptinterio?mibextid=ZbWKwL" title=""><i
+										class="fab fa-facebook-f"></i></a></li>
 						</ul>
 					</div><!--contact-social end-->
 				</div><!--contact-page end-->
@@ -256,8 +269,10 @@
 						<div class="col-lg-6 col-md-12">
 							<div class="widget widget-info">
 								<ul class="social-links">
-									<li><a href="https://www.instagram.com/cultureconceptsindia/?__coig_restricted=1" title=""><i class="fab fa-instagram"></i></a></li>
-									<li><a href="https://www.facebook.com/cultureconceptinterio?mibextid=ZbWKwL" title=""><i class="fab fa-facebook-f"></i></a></li>
+									<li><a href="https://www.instagram.com/cultureconceptsindia/?__coig_restricted=1"
+											title=""><i class="fab fa-instagram"></i></a></li>
+									<li><a href="https://www.facebook.com/cultureconceptinterio?mibextid=ZbWKwL"
+											title=""><i class="fab fa-facebook-f"></i></a></li>
 								</ul><!--social-links end-->
 							</div><!--widget-info end-->
 						</div>
@@ -267,7 +282,9 @@
 									<div class="widget widget-contact text-right">
 										<h3 class="widget-title">Contact Us</h3>
 										<ul class="ft-links">
-											<li>Cultture Concepts, 3rd Floor, Plot no 194, Survey Of India Ayyappa Society, Survey of India Colony, Chanda Naik Nagar, Madhapur, Hyderabad, Telangana 500081</li>
+											<li>Cultture Concepts, 3rd Floor, Plot no 194, Survey Of India Ayyappa
+												Society, Survey of India Colony, Chanda Naik Nagar, Madhapur, Hyderabad,
+												Telangana 500081</li>
 											<li>+91 9966741412</li>
 											<li><a href="#" title="">hello@cultureconcept.in</a></li>
 										</ul><!--ft-links end-->
@@ -303,16 +320,54 @@
 
 	</div><!--wrapper end-->
 
+	<!-- Mailing functionality -->
+	<script>
+		const form = document.getElementById('contact-form')
+		const name = document.getElementById('name')
+		const email = document.getElementById('email')
+		const phone = document.getElementById('phone')
+		const message = document.getElementById('message')
+		const city = document.getElementById('city')
 
 
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/popper.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/plugin/slick.min.js"></script>
-<script src="assets/js/plugin/html5lightbox.js"></script>
-<script src="assets/js/placeholdem.min.js"></script>
-<script src="assets/js/wow.min.js"></script>
-<script src="assets/js/script.js"></script>
+
+		form.addEventListener('submit', (e) => {
+			e.preventDefault();
+			console.log("Submit button clicked!")
+			const ebody = `
+				<b>Name: </b>${name.value}
+				<br>
+				<b>Email: </b>${email.value}
+				<br>
+				<b>Phone: </b>${phone.value}
+				<br>
+				<b>Message: </b>${message.value}
+				<br>
+				<b>city: </b>${city.value}
+			`
+			Email.send({
+				SecureToken: "c20b46f0-b685-4b9c-bf37-db33f8f7f071",
+				To: 'jaya.teja19@ifheindia.org',
+				From: "itsjayateja@gmail.com",
+				Subject: "New Contact Request",
+				Body: ebody
+			}).then(
+				message => alert("Thank you for your interest! A representative will be in touch with you shortly.")
+			);
+		})
+
+
+	</script>
+
+
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/popper.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/plugin/slick.min.js"></script>
+	<script src="assets/js/plugin/html5lightbox.js"></script>
+	<script src="assets/js/placeholdem.min.js"></script>
+	<script src="assets/js/wow.min.js"></script>
+	<script src="assets/js/script.js"></script>
 
 
 </body>
