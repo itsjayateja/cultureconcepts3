@@ -28,7 +28,7 @@ form.addEventListener('submit', (e) => {
 			`
     Email.send({
         SecureToken: "c20b46f0-b685-4b9c-bf37-db33f8f7f071",
-        To: 'jaya.teja19@ifheindia.org',
+        To: 'mahindra.nagula@gmail.com',
         From: "itsjayateja@gmail.com",
         Subject: "New Contact Request",
         Body: ebody
